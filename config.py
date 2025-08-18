@@ -26,9 +26,9 @@ LOGGER_ID = int(getenv("LOGGER_ID",))
 # Get this value from  on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID"))
 # --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME" , "SPOTIFY_X_MUSICROBOT")
+BOT_USERNAME = getenv("BOT_USERNAME" , "Laibaamusicbot")
 # --------------------------------------------------------
-BOT_NAME = getenv("BOT_NAME" , "𝐒ᴘᴏᴛɪғʏ ꭙ 𝐌ᴜsɪᴄ")
+BOT_NAME = getenv("BOT_NAME" , "˹ʟᴧɪʙᴧ ꭙ ϻᴜꜱɪᴄ˼ ♪ [ ɴᴏ ♡゙ ᴧᴅꜱ ]")
 # ________________________________________________________________________________#
 # Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -45,7 +45,7 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", "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")
 API_URL = getenv("API_URL", 'https://api.thequickearn.xyz') #youtube song url
 VIDEO_API_URL = getenv("VIDEO_API_URL", 'https://api.video.thequickearn.xyz')
-API_KEY = getenv("API_KEY", '30DxNexGenBots9f57f9') # youtube song api key
+API_KEY = getenv("API_KEY", '30DxNexGenBots9f57') # youtube song api key
 # ________________________________________________________________________________#
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/iamvillain77")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/oldskoolgc")
