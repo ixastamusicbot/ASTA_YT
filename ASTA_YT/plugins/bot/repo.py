@@ -7,19 +7,19 @@ import httpx
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 start_txt = """**
-✪ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ˹ ᴠɪʟʟᴀɪɴ-ᴍᴜsɪᴄ ˼ ʙᴏᴛ ✪
+✪ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ˹ ᴀsᴛᴀ-ᴍᴜsɪᴄ ˼ ʙᴏᴛ ✪
  
  ❍ • ʙsᴅᴋ ʀᴇᴘᴏ ʟᴇɢᴀ ◉‿◉ •
  
- ❍ • ᴘᴇʜʟᴇ ᴠɪʟʟᴀɪɴ ᴋᴏ ᴘᴀᴘᴀ ʙᴏʟ •
+ ❍ • ᴘᴇʜʟᴇ ᴀsᴛᴀ ᴋᴏ ᴘᴀᴘᴀ ʙᴏʟ •
  
  ❍ • ᴄʜᴜᴘ ᴄʜᴀᴘ ʙᴏᴛ ʟᴇᴋᴇ ɴɪᴋᴀʟ •
  
  ❍ • ʀᴇᴘᴏ ᴛᴏ ɴᴀʜɪ ᴍɪʟᴇɢᴀ ʙᴇᴛᴀ ⊂◉‿◉ •
  
- ❍ • ᴀɢʀ ʀᴇᴘᴏ ᴄʜᴀʜɪʏᴇ ᴛᴏ ᴠɪʟʟᴀɪɴ ᴋᴏ ᴘᴀᴘᴀ ʙᴏʟɴᴀ ᴘᴀᴅᴇɢᴀ •
+ ❍ • ᴀɢʀ ʀᴇᴘᴏ ᴄʜᴀʜɪʏᴇ ᴛᴏ ᴀsᴛᴀ ᴋᴏ ᴘᴀᴘᴀ ʙᴏʟɴᴀ ᴘᴀᴅᴇɢᴀ •
  
- ❍ • ᴠɪʟʟᴀɪɴ ᴘᴀᴘᴀ • **"""
+ ❍ • ᴀsᴛᴀ ᴘᴀᴘᴀ • **"""
 
 
 
@@ -28,40 +28,40 @@ start_txt = """**
 async def start(_, msg):
     buttons = [
         [ 
-          InlineKeyboardButton("•ᴀᴅᴅ ᴍᴇ•", url=f"https://t.me/radha_music_bot?startgroup=true")
+          InlineKeyboardButton("•ᴀᴅᴅ ᴍᴇ•", url=f"https://t.me/Laibaamusicbot?start=_tgr_wnBXNLAzMGM1")
         ],
         [
           InlineKeyboardButton("•sᴜᴘᴘᴏʀᴛ•", url="https://t.me/oldskoolgc"),
-          InlineKeyboardButton("•ᴏᴡɴᴇʀ•", url="https://t.me/iamakki001"),
+          InlineKeyboardButton("•ᴏᴡɴᴇʀ•", url="https://t.me/ixasta"),
           ],
                [
-                InlineKeyboardButton("•ᴜᴘᴅᴀᴛᴇs•", url="https://t.me/iamvillain77"),
+                InlineKeyboardButton("•ᴜᴘᴅᴀᴛᴇs•", url="https://t.me/ixasta1"),
 
 ],
 [
-              InlineKeyboardButton("˹ʀᴧᴅʜᴧ ꭙ ᴍᴜꜱɪᴄ˼ ♪", url=f"https://t.me/radha_music_bot"),
-              InlineKeyboardButton("︎˹ᴋᴜᴋᴜ ꭙ ᴍᴜꜱɪᴄ˼ ♪", url=f"https://t.me/KukumusicRobot"),
+              InlineKeyboardButton("˹ʀᴧᴅʜᴧ ꭙ ᴍᴜꜱɪᴄ˼ ♪", url=f"https://t.me/Laibaamusicbot"),
+              InlineKeyboardButton("︎˹ᴋᴜᴋᴜ ꭙ ᴍᴜꜱɪᴄ˼ ♪", url=f"https://t.me/soumyamusicrobot"),
               ],
               [
-              InlineKeyboardButton("•sᴘᴏᴛɪғʏ ᴍᴜsɪᴄ•", url=f"https://t.me/Spotify_Muxic_bot"),
-InlineKeyboardButton("˹ᴏᴅꜱ ꭙ ᴍᴜꜱɪᴄ˼ ♪", url=f"https://t.me/odsmusicbot"),
+              InlineKeyboardButton("•sᴘᴏᴛɪғʏ ᴍᴜsɪᴄ•", url=f"https://t.me/radhikaamusicbot"),
+InlineKeyboardButton("˹ᴏᴅꜱ ꭙ ᴍᴜꜱɪᴄ˼ ♪", url=f"https://t.me/aayramusicbot"),
 ],
 [
-InlineKeyboardButton("˹ꜱɪʏᴧ ꭙ ᴍᴜꜱɪᴄ˼ ♪", url=f"https://t.me/siya_music_robot"),
+InlineKeyboardButton("˹ꜱɪʏᴧ ꭙ ᴍᴜꜱɪᴄ˼ ♪", url=f"https://t.me/varshaamusicbot"),
 InlineKeyboardButton("Ҩ፝֟፝ɴ┋ꕶʜɪᴢ֟፝ᴜᴋᴀ ♡", url=f"https://t.me/Shizuka_Chat_Robot"),
 ],
 [
               InlineKeyboardButton("•ᴏʟᴅ ꜱᴋᴏᴏʟ ɢᴄ•", url=f"https://t.me/oldskoolgc"),
-              InlineKeyboardButton("˹ᴠɪʟʟᴀɪɴ ꭙ ꜱᴜᴘᴘᴏʀᴛ˼", url=f"https://t.me/iamvillain77"),
+              InlineKeyboardButton("˹ᴠɪʟʟᴀɪɴ ꭙ ꜱᴜᴘᴘᴏʀᴛ˼", url=f"https://t.me/ixasta"),
               ],
               [
-              InlineKeyboardButton("ᴀʟʟ ʙᴏᴛ", url=f"https://t.me/iamvillain77/38"),
+              InlineKeyboardButton("ᴀʟʟ ʙᴏᴛ", url=f"https://t.me/ixasta1/69"),
         ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await msg.reply_photo(
-        photo="https://files.catbox.moe/pcncfx.jpg",
+        photo="https://files.catbox.moe/l1yzh0.jpg",
         caption=start_txt,
         reply_markup=reply_markup
     )
@@ -84,7 +84,7 @@ async def repo(_, message):
             list_of_users += f"{count}. [{user['login']}]({user['html_url']})\n"
             count += 1
 
-        text = f"""[•ʙᴏᴛ-ᴏᴡɴᴇʀ•](https://t.me/iamakki001) | [•ᴜᴘᴅᴀᴛᴇs•](https://t.me/iamvillain77)
+        text = f"""[•ʙᴏᴛ-ᴏᴡɴᴇʀ•](https://t.me/ixasta) | [•ᴜᴘᴅᴀᴛᴇs•](https://t.me/ixasta1)
 | 𝖢𝖮𝖭𝖳𝖱𝖨𝖡𝖴𝖳𝖮𝖱𝖲 |
 ----------------
 {list_of_users}"""
