@@ -348,33 +348,47 @@ class YouTubeAPI:
                 else:
                     return
         else:
-            direct = True
-            downloaded_file = await loop.run_in_executor(None, audio_dl)
-        return downloaded_file, direct        for attempt in range(10):
-            try:
-                async with session.get(video_url) as response:
-                    if response.status != 200:
-                        raise Exception(f"API request failed with status code {response.status}")
-                
-                    data = await response.json()
-                    status = data.get("status", "").lower()
+    direct = True
+    downloaded_file = await loop.run_in_executor(None, audio_dl)
+    return downloaded_file, direct
 
-                    if status == "done":
-                        download_url = data.get("link")
-                        if not download_url:
-                            raise Exception("API response did not provide a download URL.")
-                        break
-                    elif status == "downloading":
-                        await asyncio.sleep(8)
-                    else:
-                        error_msg = data.get("error") or data.get("message") or f"Unexpected status '{status}'"
-                        raise Exception(f"API error: {error_msg}")
-            except Exception as e:
-                print(f"[FAIL] {e}")
-                return None
-        else:
-            print("⏱️ Max retries reached. Still downloading...")
-            return None
+# Retry loop
+for attempt in range(10):
+    try:
+        async with session.get(video_url) as response:
+            if response.status != 200:
+                raise Exception(f"API request failed with status code {response.status}")
+            
+            data = await response.json()
+            status = data.get("status", "").lower()
+
+            if status == "done":
+                download_url = data.get("link")
+                if not download_url:
+                    raise Exception("API response did not provide a download URL.")
+                
+                # ✅ File download yaha karna hoga
+                async with session.get(download_url) as dl_response:
+                    if dl_response.status != 200:
+                        raise Exception(f"Download failed with status {dl_response.status}")
+                    
+                    downloaded_file = await dl_response.read()
+                
+                return downloaded_file, False  # direct=False because API se download hua
+                        
+            elif status == "downloading":
+                await asyncio.sleep(8)  # wait and retry
+            else:
+                error_msg = data.get("error") or data.get("message") or f"Unexpected status '{status}'"
+                raise Exception(f"API error: {error_msg}")
+    
+    except Exception as e:
+        print(f"[FAIL] {e}")
+        return None
+
+else:
+    print("⏱️ Max retries reached. Still downloading...")
+    return None
     
 
         try:
@@ -842,6 +856,7 @@ class YouTubeAPI:
             direct = True
             downloaded_file = await download_song(link)
         return downloaded_file, direct
+
 
 
 
