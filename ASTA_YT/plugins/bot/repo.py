@@ -33,32 +33,38 @@ async def start(_, msg):
         [
           InlineKeyboardButton("•sᴜᴘᴘᴏʀᴛ•", url="https://t.me/oldskoolgc"),
           InlineKeyboardButton("•ᴏᴡɴᴇʀ•", url="https://t.me/ixasta"),
-          ],
-               [
-                InlineKeyboardButton("•ᴜᴘᴅᴀᴛᴇs•", url="https://t.me/ixasta1"),
-
-],
-[
-              InlineKeyboardButton("˹ʀᴧᴅʜᴧ ꭙ ᴍᴜꜱɪᴄ˼ ♪", url=f"https://t.me/Laibaamusicbot"),
-              InlineKeyboardButton("︎˹ᴋᴜᴋᴜ ꭙ ᴍᴜꜱɪᴄ˼ ♪", url=f"https://t.me/soumyamusicrobot"),
-              ],
-              [
-              InlineKeyboardButton("•sᴘᴏᴛɪғʏ ᴍᴜsɪᴄ•", url=f"https://t.me/radhikaamusicbot"),
-InlineKeyboardButton("˹ᴏᴅꜱ ꭙ ᴍᴜꜱɪᴄ˼ ♪", url=f"https://t.me/aayramusicbot"),
-],
-[
-InlineKeyboardButton("˹ꜱɪʏᴧ ꭙ ᴍᴜꜱɪᴄ˼ ♪", url=f"https://t.me/varshaamusicbot"),
-InlineKeyboardButton("Ҩ፝֟፝ɴ┋ꕶʜɪᴢ֟፝ᴜᴋᴀ ♡", url=f"https://t.me/Shizuka_Chat_Robot"),
-],
-[
-              InlineKeyboardButton("•ᴏʟᴅ ꜱᴋᴏᴏʟ ɢᴄ•", url=f"https://t.me/oldskoolgc"),
-              InlineKeyboardButton("˹ᴠɪʟʟᴀɪɴ ꭙ ꜱᴜᴘᴘᴏʀᴛ˼", url=f"https://t.me/ixasta"),
-              ],
-              [
-              InlineKeyboardButton("ᴀʟʟ ʙᴏᴛ", url=f"https://t.me/ixasta1/69"),
-        ]]
+        ],
+        [
+          InlineKeyboardButton("•ᴜᴘᴅᴀᴛᴇs•", url="https://t.me/ixasta1"),
+        ],
+        [
+          InlineKeyboardButton("˹ʟᴧɪʙᴧ ꭙ ϻᴜsɪᴄ˼", url=f"https://t.me/Laibaamusicbot"),
+          InlineKeyboardButton("˹sσᴜϻʏᴧ ꭙ ϻᴜsɪᴄ˼ ♪", url=f"https://t.me/soumyamusicrobot"),
+        ],
+        [
+          InlineKeyboardButton("˹ʀᴧᴅʜɪᴋᴧ ꭙ ϻᴜsɪᴄ˼", url=f"https://t.me/radhikaamusicbot"),
+          InlineKeyboardButton("˹ᴧᴧʏʀᴧ ꭙ ᴍᴜsɪᴄ˼", url=f"https://t.me/aayramusicbot"),
+        ],
+        [
+          InlineKeyboardButton("˹ᴠᴧʀsʜᴧ ꭙ ϻᴜsɪᴄ˼", url=f"https://t.me/varshaamusicbot"),
+          InlineKeyboardButton("Ҩ፝֟፝ɴ┋ꕶʜɪᴢ֟፝ᴜᴋᴀ ♡", url=f"https://t.me/Shizuka_Chat_Robot"),
+        ],
+        [
+          InlineKeyboardButton("•ᴏʟᴅ ꜱᴋᴏᴏʟ ɢᴄ•", url=f"https://t.me/oldskoolgc"),
+          InlineKeyboardButton("˹ᴠɪʟʟᴀɪɴ ꭙ ꜱᴜᴘᴘᴏʀᴛ˼", url=f"https://t.me/ixasta"),
+        ],
+        [
+          InlineKeyboardButton("ᴀʟʟ ʙᴏᴛ", url=f"https://t.me/ixasta1/69"),
+        ]
+    ]
     
     reply_markup = InlineKeyboardMarkup(buttons)
+    
+    await msg.reply_photo(
+        photo="https://files.catbox.moe/l1yzh0.jpg",
+        caption="✨ ʀᴇᴘᴏ ʙᴜᴛᴛᴏɴꜱ ✨",
+        reply_markup=reply_markup
+    )
     
     await msg.reply_photo(
         photo="https://files.catbox.moe/l1yzh0.jpg",
