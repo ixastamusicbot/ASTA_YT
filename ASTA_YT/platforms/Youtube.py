@@ -10,8 +10,8 @@ import httpx
 from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
-from YTMUSIC.utils.database import is_on_off
-from YTMUSIC.utils.formatters import time_to_seconds
+from ASTA_YT.utils.database import is_on_off
+from ASTA_YT.utils.formatters import time_to_seconds
 
 YOUR_API_KEY = getenv("YOUR_API_KEY", "stranger")
 YOUR_API_URL = getenv("YOUR_API_URL", "http://46.38.237.240:8000")
