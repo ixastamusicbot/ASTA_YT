@@ -8,8 +8,8 @@ import yt_dlp
 from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 from youtubesearchpython.__future__ import VideosSearch
-from YTMUSIC.utils.database import is_on_off
-from YTMUSIC.utils.formatters import time_to_seconds
+from ASTA_YT.utils.database import is_on_off
+from ASTA_YT.utils.formatters import time_to_seconds
 import os
 import glob
 import random
@@ -596,6 +596,7 @@ class YouTubeAPI:
             direct = True
             downloaded_file = await download_song(link)
         return downloaded_file, direct
+
 
 
 
