@@ -1,6 +1,5 @@
 import re
 from os import getenv
-
 from dotenv import load_dotenv
 from pyrogram import filters
 
@@ -23,17 +22,15 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 16000))
 # Chat id of a group for logging bot's activities
 LOGGER_ID = int(getenv("LOGGER_ID",))
 # ________________________________________________________________________________#
-# Get this value from  on Telegram by /id
+# Get this value from /id on Telegram
 OWNER_ID = int(getenv("OWNER_ID"))
 # --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME" , "Laibaamusicbot")
+BOT_USERNAME = getenv("BOT_USERNAME", "Laibaamusicbot")
 # --------------------------------------------------------
-BOT_NAME = getenv("BOT_NAME" , "˹ʟᴧɪʙᴧ ꭙ ϻᴜꜱɪᴄ˼ ♪ [ ɴᴏ ♡゙ ᴧᴅꜱ ]")
+BOT_NAME = getenv("BOT_NAME", "˹ʟᴧɪʙᴧ ꭙ ϻᴜꜱɪᴄ˼ ♪ [ ɴᴏ ♡゙ ᴧᴅꜱ ]")
 # ________________________________________________________________________________#
-# Fill these variables if you're deploying on heroku.
-# Your heroku app name
+# Fill these variables if you're deploying on Heroku.
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
-# Get it from http://dashboard.heroku.com/account
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 # ________________________________________________________________________________#
 UPSTREAM_REPO = getenv(
@@ -41,54 +38,34 @@ UPSTREAM_REPO = getenv(
     "https://github.com/ixastamusicbot/ASTA_YT",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
-GIT_TOKEN = getenv(
-    "GIT_TOKEN", "")
-API_URL = getenv("API_URL", 'https://api.thequickearn.xyz') #youtube song url
+GIT_TOKEN = getenv("GIT_TOKEN", "")
+
+# ---------- Updated API Key ----------
+API_URL = getenv("API_URL", 'https://api.thequickearn.xyz')  # youtube song url
 VIDEO_API_URL = getenv("VIDEO_API_URL", 'https://api.video.thequickearn.xyz')
-API_KEY = getenv("API_KEY", 'NxGBNexGenBots008f24') # youtube song api key
+API_KEY = getenv("API_KEY", 'NxGBNexGenBots4e1026')  # youtube song api key
 # ________________________________________________________________________________#
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/ixasta1")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/oldskoolgc")
 # ________________________________________________________________________________#
-# Set this to True if you want the assistant to automatically leave chats
-# after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", "False"))
-
 # ________________________________________________________________________________#
-# Get this credentials from https://developer.spotify.com/dashboard
 SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "")
 SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "")
-
-
 # ________________________________________________________________________________#
-# Maximum limit for fetching playlist's track from youtube, spotify, apple
-# links.
 PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", 25))
 SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", 25))
-
 # ________________________________________________________________________________#
-
-# Telegram audio and video file size limit (in bytes)
 TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", 104857600))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 # Checkout https://www.gbmb.org/mb-to-bytes for converting mb to bytes
-
-
-# Get your pyrogram v2 session from @ASTA_STRING_ROBOT on Telegram
+# ________________________________________________________________________________#
 STRING1 = getenv("STRING_SESSION", None)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
-
-
-#     _    __      _______ _____    ___  __ _    _  _____ _____ _____   __
-#    | |  / /     |__   __|  __ \  |__ \/_ | |  | |/ ____|_   _/ ____| |  __ \ / __ \__   __|
-#    | | / /         | |  | |__) |    ) || | |  | | (___   | || |      | |__) | |  | | | |
-#    | |/ /          | |  |  ___/    / / | | |  | |\___ \  | || |      |  _  /| |  | | | |
-#    | |\ \          | |  | |       / /_ | | |__| |____) |_| || |____  | | \ \| |__| | | |
-#    |_| \_\         |_|  |_|      |____||_|\____/|_____/|_____\_____| |_|  \_\\____/  |_|
-
+# ________________________________________________________________________________#
 
 BANNED_USERS = filters.user()
 adminlist = {}
@@ -96,8 +73,8 @@ lyrical = {}
 votemode = {}
 autoclean = []
 confirmer = {}
-# ________________________________________________________________________________#
 
+# ________________________________________________________________________________#
 # images
 
 START_IMG_URL = getenv(
@@ -186,4 +163,4 @@ if SUPPORT_CHAT:
     if not re.match("(?:http|https)://", SUPPORT_CHAT):
         raise SystemExit(
             "[ERROR] - Your SUPPORT_CHAT url is wrong. Please ensure that it starts with https://"
-        )
+)
