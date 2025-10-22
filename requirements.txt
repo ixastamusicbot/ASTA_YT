@@ -5,7 +5,6 @@ asyncio
 stripe==10.7.0
 mysql-connector-python==9.0.0
 telebot==0.0.5
-youtube_dl==2021.12.17 
 beautifulsoup4
 dnspython
 ffmpeg-python
@@ -22,7 +21,6 @@ opencv-python
 pillow==9.5.0
 psutil
 pickledb
-pornhub-api==0.3.0
 pycountry
 pycryptodome
 pydub
@@ -46,5 +44,6 @@ tgcrypto==1.2.5
 unidecode
 youtube-search
 youtube-search-python
+# Updated and supported Pyrogram + yt-dlp
 git+https://github.com/KurimuzonAkuma/pyrogram
-git+https://github.com/yt-dlp/yt-dlp
+yt-dlp>=2025.1.1
