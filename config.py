@@ -30,7 +30,7 @@ YT_API_KEY = getenv("YT_API_KEY" , 'xbit_3nW_hlcVau6UYCNWHJhSdZJV2rWbnTSH' ) ## 
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/ITzastamusic/LAIBA_MUSIC"
+    "https://github.com/ixastamusicbot/ASTA_YT"
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv("GIT_TOKEN")
