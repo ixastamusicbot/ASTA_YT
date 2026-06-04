@@ -13,7 +13,7 @@ from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
-from py_yt import VideosSearch, CustomSearch
+from py_yt import VideosSearch, py_yt
 from ASTA_YT import LOGGER
 from ASTA_YT.utils.database import is_on_off
 from ASTA_YT.utils.formatters import time_to_seconds
