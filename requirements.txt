@@ -43,6 +43,5 @@ tgcrypto==1.2.5
 unidecode
 youtube-search
 youtube-search-python
-yt-search-py==1.0.0
 git+https://github.com/KurimuzonAkuma/pyrogram
 yt-dlp>=2025.1.1
