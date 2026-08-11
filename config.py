@@ -20,7 +20,8 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 LOGGER_ID = int(getenv("LOGGER_ID", -1002029289902))
 OWNER_ID = int(getenv("OWNER_ID", 5909658683))
 
-HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
+HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY")
+HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME")
 API_URL = getenv("API_URL", "https://pvtz.nexgenbots.xyz")
 
 
